@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "veiled"
+version = "0.1.0"
+description = ""
+authors = ["Vasili Syrakis <vsyrakis@atlassian.com>"]
+
+[tool.poetry.scripts]
+veil = "veil.cli:run"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cryptography = "^36.0.1"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
