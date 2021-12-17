@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "veiled"
-version = "0.1.0"
+version = "0.2.1"
 description = "A very thin CLI wrapper around cryptography.fernet:Fernet"
 authors = ["Vasili Syrakis <cetanu@gmail.com>"]
 license = "MIT"
@@ -8,12 +8,13 @@ readme = "README.md"
 keywords = ["encryption", "symmetric", "commandline"]
 
 [tool.poetry.scripts]
-veil = "veil.cli:run"
+veil = "veiled.cli:run"
 
 [tool.poetry.dependencies]
 python = "^3.9"
 cryptography = "^36.0.1"
 typer = "^0.4.0"
+PyYAML = "^6.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
