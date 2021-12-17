@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "veiled"
 version = "0.1.0"
-description = ""
-authors = ["Vasili Syrakis <vsyrakis@atlassian.com>"]
+description = "A very thin CLI wrapper around cryptography.fernet:Fernet"
+authors = ["Vasili Syrakis <cetanu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["encryption", "symmetric", "commandline"]
 
 [tool.poetry.scripts]
 veil = "veil.cli:run"
