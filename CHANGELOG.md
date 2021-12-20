@@ -1,6 +1,14 @@
-0.2.0
+0.2.2
+-----
+encrypt-yaml, decrypt-yaml, encrypt-file, and decrypt-file can now to in-place operations if the output argument is omitted
+
+0.2.1
 -----
 Added encrypt-yaml and decrypt-yaml for recursively encrypting strings in yaml files
+
+0.2.0
+-----
+Accidentally skipped this versio
 
 0.1.0
 -----
