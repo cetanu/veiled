@@ -1,3 +1,7 @@
+0.2.3
+-----
+private key can be passed in via env var `VEILED_ENCRYPTION_KEY` or `bamboo_veiled_encryption_key`
+
 0.2.2
 -----
 encrypt-yaml, decrypt-yaml, encrypt-file, and decrypt-file can now to in-place operations if the output argument is omitted

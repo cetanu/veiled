@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "veiled"
-version = "0.2.2"
+version = "0.2.3"
 description = "A very thin CLI wrapper around cryptography.fernet:Fernet"
 authors = ["Vasili Syrakis <cetanu@gmail.com>"]
 license = "MIT"
