@@ -1,3 +1,7 @@
+0.2.4
+-----
+lowered required python version
+
 0.2.3
 -----
 private key can be passed in via env var `VEILED_ENCRYPTION_KEY` or `bamboo_veiled_encryption_key`

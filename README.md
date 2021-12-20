@@ -7,7 +7,9 @@ and have my build agents decrypt them using a centralized key.
 
 installation
 ------------
-pip install veiled
+`pip install veiled`
+
+It's recommended to pin the install to a specific version
 
 usage
 -----
@@ -32,4 +34,5 @@ Commands:
   encrypt-file
   encrypt-yaml
   generate-key
+  version
 ```
