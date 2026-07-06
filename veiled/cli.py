@@ -32,8 +32,8 @@ def veil_file(
     mode: str, path: Path, key: str = KEY, output: Optional[Path] = None
 ) -> None:
     src, dst = "plaintext", "secret"
-    if mode == "encrypt":
-        src, dst == dst, src
+    if mode == "decrypt":
+        src, dst = dst, src
 
     suite = Fernet(key)
     method = getattr(suite, mode)
@@ -73,8 +73,8 @@ def veil_yaml(
     mode: str, path: Path, key: str = KEY, output: Optional[Path] = None
 ) -> None:
     src, dst = "plaintext", "secret"
-    if mode == "encrypt":
-        src, dst == dst, src
+    if mode == "decrypt":
+        src, dst = dst, src
 
     suite = Fernet(key)
     method = getattr(suite, mode)
