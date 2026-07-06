@@ -1,3 +1,6 @@
-from pkg_resources import get_distribution
+import importlib.metadata
 
-__version__ = get_distribution("veiled").version
+try:
+    __version__ = importlib.metadata.version("veiled")
+except importlib.metadata.PackageNotFoundError:
+    __version__ = "unknown"

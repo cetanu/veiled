@@ -1,27 +1,31 @@
-[tool.poetry]
+[project]
 name = "veiled"
 version = "0.2.3"
 description = "A very thin CLI wrapper around cryptography.fernet:Fernet"
-authors = ["Vasili Syrakis <cetanu@gmail.com>"]
-license = "MIT"
+authors = [
+    { name = "Vasili Syrakis", email = "cetanu@gmail.com" }
+]
+license = { text = "MIT" }
 readme = "README.md"
 keywords = ["encryption", "symmetric", "commandline"]
+requires-python = ">=3.9"
+dependencies = [
+    "cryptography>=36.0.1",
+    "typer>=0.4.0",
+    "PyYAML>=6.0",
+]
 
-[tool.poetry.scripts]
+[project.scripts]
 veil = "veiled.cli:run"
 
-[tool.poetry.dependencies]
-python = "^3.7"
-cryptography = "^36.0.1"
-typer = "^0.4.0"
-PyYAML = "^6.0"
-
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
-mypy = "^0.920"
-types-setuptools = "^57.4.4"
-types-PyYAML = "^6.0.1"
+[dependency-groups]
+dev = [
+    "pytest>=5.2",
+    "mypy>=0.920",
+    "types-setuptools>=57.4.4",
+    "types-PyYAML>=6.0.1",
+]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
